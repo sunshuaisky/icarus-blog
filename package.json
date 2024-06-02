@@ -17,6 +17,8 @@
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@unocss/nuxt": "^0.60.3"
+    "@iconify/json": "^2.2.215",
+    "@unocss/nuxt": "^0.60.3",
+    "sass": "^1.77.4"
   }
 }
