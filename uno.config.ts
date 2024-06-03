@@ -16,7 +16,7 @@ export default defineConfig({
         'fontColor': 'dark:color-[#c7c7c7] color-[#16171a]',
         'menuBorderBottom': 'border-b-1px border-b-solid dark:border-b-#303133 border-b-#fafafa',
         'flexCenterCenter': 'flex items-center justify-center',
-        'menuTextFont': 'text-13px tracking-[0.07em] m-b-[24px] cursor-pointer',
+        'menuTextFont': 'text-13px tracking-[0.07em] m-b-[24px]',
     },
     presets: [
         presetUno(),

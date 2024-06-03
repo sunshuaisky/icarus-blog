@@ -1,6 +1,6 @@
 <template>
-  <div @click="toggleDark"
-       class="theme-switch w-42px h-22px rounded-11px flex items-center justify-around bg-white dark:bg-black relative cursor-pointer">
+  <div @click="toggleDarksDark()"
+       class="theme-switch w-42px h-22px rounded-11px flex items-center justify-around bg-white dark:bg-black relative cursor-pointer m-[0_8px]">
     <div class="btn-sun i-material-symbols-light-sunny m-l-2px z-1"></div>
     <div class="btn-switch bg-[#bae0ff] w-18px h-18px rounded-9px absolute top-2px z-0"></div>
     <div class="btn-moon i-material-symbols-dark-mode m-r-2px z-1"></div>
