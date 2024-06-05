@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans fontColor text-16px font-500">
+  <div class="font-sans font-color text-16px font-500">
     <NuxtLayout>
       <NuxtPage></NuxtPage>
     </NuxtLayout>

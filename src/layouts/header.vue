@@ -6,7 +6,7 @@
           type="text" readOnly placeholder="Search"
       />
     </div>
-    <div class="flexCenterCenter shrink-0 m-l-a p-l-20px">
+    <div class="flex_center_center shrink-0 m-l-a p-l-20px">
       <div class="m-[0_8px]">Icarus.Sun</div>
       <div class="i-grommet-icons-github m-[0_8px]" />
       <ThemeSwitch></ThemeSwitch>

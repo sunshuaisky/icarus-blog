@@ -1,11 +1,11 @@
 <template>
   <div
-      class="w-full h-screen bg-img-['/bg.png'] box-border overflow-hidden select-none flexCenterCenter"
+      class="w-full h-screen bg-img-['/bg.png'] box-border overflow-hidden select-none flex_center_center"
       bg="[#121527db] cover no-repeat center-center blend-color-dodge">
     <div
         class="opacity-100 rounded-30px cursor-auto select-auto relative left-0 top-0 overflow-hidden z-10 bg-[#eeeeee] shadow-[0_0_40px_#000000]">
       <div
-          class="bgColor w-75vw h-95vh overflow-hidden relative opacity-97 shadow-[0000004D_0px_20px_50px] flex">
+          class="bg_color w-75vw h-95vh overflow-hidden relative opacity-97 shadow-[0000004D_0px_20px_50px] flex">
         <SideBar></SideBar>
         <div class="flex flex-col flex-1">
           <Header></Header>

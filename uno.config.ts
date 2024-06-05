@@ -12,11 +12,13 @@ import {
 
 export default defineConfig({
     shortcuts: {
-        'bgColor': 'dark:bg-[#16171a] bg-[#e0e5ec]',
-        'fontColor': 'dark:color-[#c7c7c7] color-[#16171a]',
-        'menuBorderBottom': 'border-b-1px border-b-solid dark:border-b-#303133 border-b-#fafafa',
-        'flexCenterCenter': 'flex items-center justify-center',
-        'menuTextFont': 'text-13px tracking-[0.07em] m-b-[24px]',
+        'bg_color': 'dark:bg-[#16171a] bg-[#e0e5ec]',
+        'font-color': 'dark:color-[#c7c7c7] color-[#16171a]',
+        'menu_border_bottom': 'border-b-1px border-b-solid dark:border-b-#303133 border-b-#fafafa',
+        'flex_center_center': 'flex items-center justify-center',
+        'menu_text_font': 'text-13px tracking-[0.07em] m-b-[24px]',
+        'blog_title_styles': 'text-24px font-700 m-[32px_0_21px] dark:color-[#cbd5e1] color-[#334155] line-height-relaxed',
+        'blog_name_styles': 'text-18px dark:color-white color-[#0F172A] decoration-underline font-500 hover:color-[#69b1ff] hover:decoration-none hover:outline-0 cursor-pointer line-height-relaxed transition-color transition-duration-300'
     },
     presets: [
         presetUno(),
