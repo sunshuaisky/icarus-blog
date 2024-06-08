@@ -5,18 +5,29 @@
       <div class="absolute top-[-30px] left-0 bg_color w-220px h-70px z-[-1]"></div>
       @Icarus.Sun
     </div>
-    <div class="p-[36px_0px] menu_border_bottom">
-      <div class="menu_text_font">RICK</div>
+    <div class="p-[36px_0px] menu_border_bottom last:border-0" v-for="(item, index) in menu" :key="index">
+      <div class="menu_text_font">{{ item.name }}</div>
       <div>
-        <nuxt-link to="/blog" class="flex items-center decoration-none cursor-pointer">Blog
+        <nuxt-link v-for="(cItem, cIndex) in item.children" :key="cIndex" :to="cItem.path" class="flex items-center decoration-none cursor-pointer m-t-26px first:m-t-0">
+          {{ cItem.name }}
         </nuxt-link>
-        <div class="flex items-center decoration-none m-t-26px cursor-pointer">
-          Memorial Day
-        </div>
-        <div class="flex items-center decoration-none m-t-26px cursor-pointer">
-          Music
-        </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import {ref} from 'vue'
+
+interface Menu {
+  name: string
+  path?: string
+  children?: Menu[]
+}
+
+const menu = ref<Menu[]>([])
+
+setTimeout(() => {
+  menu.value = [{name: 'ICARUS', children: [{name: 'Navigate', path: '/navigate'}, {name: 'Blog', path: '/blog'}]}]
+}, 1000)
+</script>
