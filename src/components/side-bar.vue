@@ -5,10 +5,11 @@
       <div class="absolute top-[-30px] left-0 bg_color w-220px h-70px z-[-1]"></div>
       @Icarus.Sun
     </div>
-    <div class="p-[36px_0px] menu_border_bottom last:border-0" v-for="(item, index) in menu" :key="index">
+    <div class="p-[36px_0px] menu_border_bottom last:border-0" v-for="(item, index) in menus" :key="index">
       <div class="menu_text_font">{{ item.name }}</div>
       <div>
-        <nuxt-link v-for="(cItem, cIndex) in item.children" :key="cIndex" :to="cItem.path" class="flex items-center decoration-none cursor-pointer m-t-26px first:m-t-0">
+        <nuxt-link v-for="(cItem, cIndex) in item.children" :key="cIndex" :to="cItem.path"
+                   class="flex items-center decoration-none cursor-pointer m-t-26px first:m-t-0">
           {{ cItem.name }}
         </nuxt-link>
       </div>
@@ -17,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from 'vue'
+import {reactive} from 'vue'
 
 interface Menu {
   name: string
@@ -25,9 +26,18 @@ interface Menu {
   children?: Menu[]
 }
 
-const menu = ref<Menu[]>([])
+const menus = reactive<Menu[]>([])
 
 setTimeout(() => {
-  menu.value = [{name: 'ICARUS', children: [{name: 'Navigate', path: '/navigate'}, {name: 'Blog', path: '/blog'}]}]
+  let data = [
+    {
+      name: 'ICARUS',
+      children: [
+        {name: 'Navigate', path: '/navigate'},
+        {name: 'Blog', path: '/blog'}
+      ]
+    }
+  ];
+  menus.push(...data)
 }, 1000)
 </script>
