@@ -5,10 +5,35 @@
     >
       Blog
     </div>
-    <BLogList></BLogList>
+    <BLogList :blogs="blogs"></BLogList>
   </div>
 </template>
 
 <script setup lang="ts">
 import BLogList from '~/components/blog-list.vue'
+import {reactive} from 'vue'
+
+interface Blog {
+  title: string
+  path?: string
+  children?: Blog[]
+}
+
+const blogs = reactive<Blog[]>([])
+
+setTimeout(() => {
+  let data = [
+    {
+      title: 'AAAAAA',
+      children: [
+        {title: 'Angular Quick Start - Project', path: '/navigate'},
+        {title: 'Angular Quick Start - Project', path: '/blog'},
+        {title: 'Angular Quick Start - Project', path: '/blog'},
+        {title: 'Angular Quick Start - Project', path: '/blog'},
+        {title: 'Angular Quick Start - Project', path: '/blog'}
+      ]
+    }
+  ];
+  blogs.push(...data)
+}, 1000)
 </script>
