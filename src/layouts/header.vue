@@ -2,7 +2,7 @@
   <div class="flex p-32px">
     <div class="h-34px flex w-full max-w-450px">
       <input
-          class="w-full h-full border-0 dark:bg-black bg-white rounded-8px text-14px font-500 p-[0_40px_0_16px] shadow-[0_0_0_2px_rgba(134, 140, 160, 0.02)] searchIcon"
+          class="w-full h-full border-0 dark:bg-black bg-white rounded-8px text-14px font-500 p-[0_40px_0_16px] shadow-[0_0_0_2px_rgba(134, 140, 160, 0.02)]"
           type="text" readOnly placeholder="Search"
       />
     </div>
