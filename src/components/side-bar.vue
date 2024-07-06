@@ -28,6 +28,6 @@ interface Menu {
 const menu = ref<Menu[]>([])
 
 setTimeout(() => {
-  menu.value = [{name: 'ICARUS', children: [{name: 'Navigate', path: '/navigate'}, {name: 'Blog', path: '/blog'}]}]
+  menu.value = [{name: 'ICARUS', children: [{name: 'Navigate', path: '/navigate'}, {name: 'Blog', path: '/blog'}, {name: 'ChatGPT', path: '/ChatGPT'}]}]
 }, 1000)
 </script>
